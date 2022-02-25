@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo</title>
+	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="./css/styles.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+	<div id="main">
+		<div class="content">
+			<header id="header">
+				<h1 class="headings">TODO</h1> 
+				<img src="./images/icon-moon.svg"> 
+			</header>
+			<form id = "form" class="inputform">
+				<span class="circle"></span>
+            	<input id="userinput" type="text" class="userinput" placeholder="create a new todo">
+				<button id = "plusbutton" class="plusbutton" onclick="return false">+</button>
+			</form>
+			<div class="maindiv" id = "todos">
+				<ul class="defaultbox" id = "todolist">
+					No items left
+				</ul>
+			</div>
+			<div id = "cleardiv">
+				<button id="clearButton" class="clearbutton">Clear Completed</button>
+			</div> 
+        </div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

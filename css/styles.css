@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    background-image: url('../images/bg-mobile-light.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(236, 33%, 92%);
+    min-height: 100vh;
+}
+#main{
+    display: flex;
+    padding: 5rem 0;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.content header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.headings{
+    color: white;
+    letter-spacing: 1rem;
+    font-size: 2rem;
+}
+
+.inputform{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-left: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border: 1px solid white;
+}
+.userinput{
+    font-size: 1rem;
+    padding: .5em 0;
+    width: 100%;
+    border: none;
+    margin-left: 0.2rem;
+    outline-width: 0.1px;
+    height: 3.5rem;
+    color: hsl(0, 0%, 26%);
+    outline: 1px;
+    font-family: inherit;
+}
+.plusbutton{
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+.circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid hsl(233, 11%, 84%);
+    margin: 0 0.2rem;
+}
+#todos{
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.maindiv{
+    background-color: white;
+}
+#todos ul{
+    list-style-type: none;
+}
+#todos div{
+    padding: .5em 0;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-bottom: 1px solid hsl(0, 4%, 70%);
+    /*border-radius: 10px;*/
+}
+
+.todotext{
+    padding-left: .5rem;
+    padding-top: .5em;
+    padding-bottom: .5rem;
+}
+.crossimage{
+    margin-left: auto;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding-right: 1rem;   
+}
+.defaultbox{
+    text-align: center;
+    padding: 3rem 0;
+}
+.linetext{
+    text-decoration: line-through;
+}
+.circlewithtick{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid hsl(233, 11%, 84%);
+    margin: 0 0.2rem;
+    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cleardiv{
+    display: flex;
+    justify-content: center;
+}
+.clearbutton{
+    background-image: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    padding: 0.7rem 0.3rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+}
+.moveright{
+    animation: goright 500ms ease 0s 1 forwards;
+}
+ul li{
+    background-color: white;
+}
+.nobackground{
+    background-color: transparent;
+}
+.invalidbox{
+    border-color: red;
+}
+@keyframes goright {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@media screen and (min-width: 787px) {
+    body{
+        background-image: url('../images/bg-desktop-light.jpg');
+    }
+    .content{
+        width: 50%;
+    }
+}
